@@ -1,0 +1,45 @@
+{"SitAndDream" :
+	{
+		"uninstall":[
+			{
+				"chromium-browser":true,
+				"libreoffice*":true,
+				"idle*":true,
+				"wolfram*":true,
+				"minecraft-pi":true,
+				"python-minecraftpi":true,
+				"python3-minecraftpi":true,
+				"scratch":true,
+				"penguinspuzzle":true,
+				"sonic-pi":true,
+				"dillo":true,
+				"squeak-vm":true,
+				"squeak-plugins-scratch":true,
+				"netsurf-gtk":true,
+				"netsurf-common":true
+			}
+		],
+
+
+		"install":[
+			{
+				"vim":true,
+				"tmux":true,
+				"fail2ban":true,
+				"unattended-upgrades":true,
+				"apt-listchanges":true
+			}
+		],
+
+		"configure":[
+			{
+				"vim-plugins":true,
+				"fail2ban":true,
+				"firewall":true,
+				"SSH":true,
+				"RiffHelpMe":true,
+				"coucou":true
+			}
+		]
+	}
+}
