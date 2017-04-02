@@ -44,7 +44,6 @@ for item in configure:
 
 	if str(item)=="firewall":
 	    os.system("sudo cp ./files/iptables-for-client-mode /etc/init.d/firewall.sh")
-	    os.system("sudo chmod +x /etc/init.d/firewall.sh")
 	    os.system("sudo update-rc.d firewall.sh defaults")
 
 	if str(item)=="fail2ban":
@@ -55,11 +54,11 @@ for item in configure:
             os.system("sudo cp ./files/sshd_config /etc/ssh/sshd_config")
 
         if str(item)=="RiffHelpMe":
-    	    os.system("git clone https://github.com/davidriff/RiffHelpMe ~/Riff-apps/RiffHelpMe")
-            os.system("sudo cp ~/Riff-apps/RiffHelpMe /usr/bin/")
+    	    os.system("git clone https://github.com/davidriff/RiffHelpMe ~/Riff-apps/RiffHelpMe/")
+            os.system("sudo cp ~/Riff-apps/RiffHelpMe/RiffHelpMe.sh /usr/bin/RiffHelpMe")
+            os.system("sudo cp -ar ~/Riff-apps/RiffHelpMe/RiffHelpMe/ /etc/")
 
         if str(item)=="coucou":
-            os.system("git clone https://github.com/davidriff/coucou ~/Riff-apps/coucou")
+            os.system("git clone https://github.com/davidriff/coucou ~/Riff-apps/coucou/")
             os.system("sudo cp ~/Riff-apps/coucou/coucou.py /etc/init.d/coucou.py")
-            os.system("sudo chmod +x /etc/init.d/coucou.py")
             os.system("sudo update-rc.d coucou.py defaults")
