@@ -55,8 +55,8 @@ for item in configure:
 
         if str(item)=="RiffHelpMe":
     	    os.system("git clone https://github.com/davidriff/RiffHelpMe ~/Riff-apps/RiffHelpMe/")
-            os.system("sudo cp ~/Riff-apps/RiffHelpMe/RiffHelpMe.sh /usr/bin/RiffHelpMe")
-            os.system("sudo cp -ar ~/Riff-apps/RiffHelpMe/RiffHelpMe/ /etc/")
+            os.system("sudo cp ~/Riff-apps/RiffHelpMe/RiffHelpMe.sh /usr/local/bin/RiffHelpMe")
+            os.system("sudo cp -ar ~/Riff-apps/RiffHelpMe/RiffHelpMe/ /opt/")
 
         if str(item)=="coucou":
             os.system("git clone https://github.com/davidriff/coucou ~/Riff-apps/coucou/")
