@@ -1,6 +1,6 @@
 # SitAndDream
 
-This scripts uninstalls all non-desired programs from Raspberry-Pi and installs the useful programs you want.
+This scripts uninstalls all non-desired programs from Raspberry-Pi and then installs and configure the useful programs you want.
 
 ### Use ###
 
