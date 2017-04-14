@@ -6,8 +6,8 @@ sudo passwd root
 echo "Good, now give me the name of the new user:"
 read new_user
 
-adduser $new_user
-adduser $new_user sudo
+sudo adduser $new_user
+sudo adduser $new_user sudo
 
 echo "Configuring SSH, root login disabled, you should login with "$new_user
 #sudo cp ./files/sshd_config /etc/ssh/sshd_config
