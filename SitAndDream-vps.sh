@@ -18,8 +18,8 @@ sudo sed -i 's/X11Forwarding yes/X11Forwarding no/g' /etc/ssh/sshd_config
 sudo sed -i 's/PermitRootLogin yes/PermitRootLogin no/g' /etc/ssh/sshd_config
 
 sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get install fail2ban vim tmux unattended-upgrades apt-listchanges git
+sudo apt-get upgrade -y
+sudo apt-get install -y fail2ban vim tmux unattended-upgrades apt-listchanges git
 
 git clone https://github.com/davidriff/RiffHelpMe
 sudo cp ./RiffHelpMe/RiffHelpMe.sh /usr/local/bin/RiffHelpMe
