@@ -13,7 +13,7 @@ echo "Configuring SSH, root login disabled, you should login with "$new_user
 #sudo cp ./files/sshd_config /etc/ssh/sshd_config
 echo "give me new port for ssh"
 read new_ssh_port
-sudo sed -i 's/Port 22/Port $new_ssh_port/g' /etc/ssh/sshd_config
+sudo sed -i 's/Port 22/Port '$new_ssh_port'/g' /etc/ssh/sshd_config
 sudo sed -i 's/X11Forwarding yes/X11Forwarding no/g' /etc/ssh/sshd_config
 sudo sed -i 's/PermitRootLogin yes/PermitRootLogin no/g' /etc/ssh/sshd_config
 
