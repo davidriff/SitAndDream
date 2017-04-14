@@ -19,7 +19,7 @@ sudo sed -i 's/PermitRootLogin yes/PermitRootLogin no/g' /etc/ssh/sshd_config
 
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get install vim tmux unattended-upgrades apt-listchanges git
+sudo apt-get install fail2ban vim tmux unattended-upgrades apt-listchanges git
 
 git clone https://github.com/davidriff/RiffHelpMe
 sudo cp ./RiffHelpMe/RiffHelpMe.sh /usr/local/bin/RiffHelpMe
@@ -28,8 +28,6 @@ sudo cp -ar ./RiffHelpMe/RiffHelpMe/ /opt/
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 cp ./files/vimrc ~/.vimrc
 vim -c PluginInstall
-
-
 
 sudo cp ./files/fail2ban.conf /etc/fail2ban/fail2ban.local
 sudo cp ./files/jail.conf /etc/fail2ban/jail.local
