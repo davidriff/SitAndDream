@@ -32,5 +32,5 @@ vim -c PluginInstall
 sudo cp ./files/fail2ban.conf /etc/fail2ban/fail2ban.local
 sudo cp ./files/jail.conf /etc/fail2ban/jail.local
 
-'PS1="\[\e[31;1m\][\t] \u@\h en \w: \[\033[00m\]"' >> /home/$new_user/.bashrc
+'PS1="\[\e[31;1m\][\A] \u@\h at \w: \[\033[00m\]"' >> /home/$new_user/.bashrc
 
