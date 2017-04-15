@@ -42,4 +42,4 @@ sudo chmod +x ./files/iptables-for-vps
 sudo mv ./files/iptables-for-vps /etc/init.d
 sudo update-rc.d iptables-for-vps defaults
 
-echo "You should change /etc/jail.conf in order to listen SSH in the new port."
+echo "You should change /etc/jail.local in order to listen SSH in the new port."
