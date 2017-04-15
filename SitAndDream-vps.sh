@@ -34,4 +34,9 @@ sudo bash -c "cat ./files/config_prompt >> /home/$new_user/.bashrc"
 sudo bash -c "cat ./files/disable_ipv6 >> /etc/sysctl.conf"
 sudo sysctl -p
 
+
+sed -i 's/iptables -A INPUT -p tcp --dport 22 -j ACCEPT/iptables -A INPUT -p tcp --dport '$new_ssh_port' -j ACCEPT/g' ./files/iptables-for-vps
+sed -i 's/iptables -A OUTPUT -p tcp --sport 22 -j ACCEPT/iptables -A OUTPUT -p tcp --sport '$new_ssh_port' -j ACCEPT/g' ./files/iptables-for-vps
+
+
 echo "You should change /etc/jail.conf in order to listen SSH in the new port."
