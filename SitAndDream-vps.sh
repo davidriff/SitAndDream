@@ -34,3 +34,4 @@ sudo cp ./files/jail.conf /etc/fail2ban/jail.local
 
 sudo bash -c "cat ./files/config_prompt >> /home/$new_user/.bashrc"
 sudo bash -c "cat ./files/disable_ipv6 >> /etc/sysctl.conf"
+sudo sysctl -p
