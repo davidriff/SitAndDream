@@ -40,6 +40,6 @@ sed -i 's/iptables -A OUTPUT -p tcp --sport 22 -j ACCEPT/iptables -A OUTPUT -p t
 
 sudo chmod +x ./files/iptables-for-vps
 sudo mv ./files/iptables-for-vps /etc/init.d
-sudo update-rc.d /etc/init.d/iptables-for-vps defaults
+sudo update-rc.d iptables-for-vps defaults
 
 echo "You should change /etc/jail.conf in order to listen SSH in the new port."
